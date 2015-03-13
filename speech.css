@@ -20,3 +20,12 @@ font-family:'Calibri';
 font-size:42px;
 color:#fff;
 }
+.text_field{
+padding:13px 19px;
+font-family:'Calibri';
+font-size:18px;
+border:none;
+width:210px;
+border-radius:2px;
+
+}
