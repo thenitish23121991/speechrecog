@@ -2,11 +2,14 @@
 <html>
 <head>
 <title></title>
+<link rel="stylesheet" type="text/css" href="speech.css" />
 </head>
 <body>
 
 <div class="container">
+<div class="messageDiv">
 
+</div>
 </div>
 
 
@@ -19,6 +22,11 @@ recognition.interimResults = true;
 recognition.onresult = function(event){
 console.log(event);
 }
+
+recognition.onstart = function(event){
+document.getElementById('messageDiv').innerHTML = 'Working';
+}
+
 recognition.start();
 
 </script>
